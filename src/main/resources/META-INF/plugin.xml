@@ -40,6 +40,12 @@
             <!-- 该标签表示通过快捷键触发Action，注意快捷键可能会冲突，导致功能无法被触发，更换绑定的快捷键即可 -->
             <keyboard-shortcut first-keystroke="ctrl shift 9" keymap="$default"/>
         </action>
+        <action id="translator" class="com.example.demo.TranslatorAction" description="Translate" text="Translate">
+            <!-- 绑定快捷键，此处也可以选择不绑定。 -->
+            <keyboard-shortcut first-keystroke="ctrl shift 0" keymap="$default"/>
+            <!-- 添加到鼠标右键菜单中 -->
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
     </actions>
 
 </idea-plugin>
